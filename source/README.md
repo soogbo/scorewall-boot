@@ -53,12 +53,12 @@ Mybatis Geneator 详解:
 ## application.properties 配置
 ```properties
 #mybatis
-mybatis.type-aliases-package=tk.mybatis.springboot.model
+mybatis.type-aliases-package=com.scorewall.model
 mybatis.mapper-locations=classpath:mapper/*.xml
 
 #mapper
 #mappers 多个接口时逗号隔开
-mapper.mappers=tk.mybatis.springboot.util.MyMapper
+mapper.mappers=com.scorewall.util.MyMapper
 mapper.not-empty=false
 mapper.identity=MYSQL
 
@@ -75,12 +75,12 @@ pagehelper.params=count=countSql
 
 ```yaml
 mybatis:
-    type-aliases-package: tk.mybatis.springboot.model
+    type-aliases-package: com.scorewall.model
     mapper-locations: classpath:mapper/*.xml
 
 mapper:
     mappers:
-        - tk.mybatis.springboot.util.MyMapper
+        - com.scorewall.util.MyMapper
     not-empty: false
     identity: MYSQL
 
