@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController 
 @RequestMapping("/page")
-public class PageController {
+public class BasePageController {
 	
 	/**
 	 * 设置通用页面访问控制器，页面访问 /page/{pageName}，跳转到views下的pageName.jsp
